@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTM Tyres</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #fff;
+    }
+    .hero {
+      position: relative;
+      background-image: url('https://www.elitegarages.co.uk/wp-content/uploads/2021/11/car-tyres-1200_lb.webp');
+      background-size: cover;
+      background-position: center;
+      filter: blur(4px);
+      height: 100vh;
+      z-index: -1;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-wrapper {
+      background: #1e1e1e;
+      padding: 40px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .form-wrapper h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #f1c40f;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    input, textarea {
+      background: #333;
+      color: #fff;
+    }
+    button {
+      background-color: #f1c40f;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #d4ac0d;
+    }
+    .payment-note {
+      margin-top: 20px;
+      background: #2c2c2c;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .payment-note img {
+      width: 50px;
+      margin: 5px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero"></div>
+  <div class="overlay">
+    <div class="form-wrapper">
+      <h2>Welcome To Crossland Tyres</h2>
+      <h2>Book Your Tyre Appointment</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <textarea rows="4" placeholder="Service Details / Notes"></textarea>
+        <button type="submit">Submit Booking</button>
+      </form>
+      <div class="payment-note">
+        <p><strong>Card payment will soon be available</strong></p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+      </div>
+      <div class="footer">
+        <p>Trading Address: Unit 19, Rockware Business Centre, Greenford, UB6 0AA</p>
+        <p>Contact Number: 07725970411</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
